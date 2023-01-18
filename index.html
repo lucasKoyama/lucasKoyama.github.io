@@ -4,57 +4,89 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css">
         <title>Portfólio Web</title>
     </head>
     <body>
-        <h1>Lucas Koyama's portfolio</h1>
-        
-        <!--Um índice com links internos para as diferentes seções do seu portfólio-->
-        <a href="#sobre-mim">Sobre mim</a>
-        <a href="#pagina">Página que eu gosto</a>
-
-        <!--Seu nome completo-->
-        <h1 class="lucaskoyama">Lucas Hideki Oliveira Koyama</h1>
-
-        <!--Uma foto atual sua, acompanhada de um texto alternativo, que deve ser a descrição da foto que você está usando-->
-        <img src="perfil_smile_serious.JPG" alt="foto do Lucas Koyama com fundo contendo árvores desfocadas" width="400px" id="foto">
-
-        <!--Uma breve descrição sobre você, destacando algumas informações como nacionalidade e a cidade/estado onde mora-->
-        <p>
-            Hi! I'am Lucas Koyama from Brazil, I live in a country city called Aguaí in the state of São Paulo! But despite the fact of being
-            in Brazil and in a country city don't you think that I'am not acquaitned with technology! I've worked as a CNC programmer in an enterprise
-            of IT infrastructure, and you might think, what is a CNC programmer? Well, basically its someone that create programms to machines execute
-            to make some cuts, so there my main job was to make a good material managment, allied with team colaboration and also machine friendly to
-            create programms that keep their health in good state.<br>
-            <br>
-            There in Multiway the data center IT infrastructure enterprise I did a lot of different things, and one of the things that I did in my spare
-            time (just after eating the lunch) was to create automations with VBA, autohotkeys and finally python! Thats when my interest in programming and
-            specially development programming came! Since that moment I became a true nerd, I did (for free) programms for my friends, my girlfriend, and for
-            my father's business. For now while I'am typing this, I thought "well I need to finish this soon, to keep going with my studies that gonna start very soon!".<br>
-            <br>
-            So... yeah! See you soon! And thanks for your attention!
-        </p>
-
-        <!--Partes do seu portfólio destacadas com negrito e/ou itálico-->
-        <p class="resido"><strong>Aguaí - SP</strong></p>
-
-        <!--Uma lista de habilidades que você possui, com destaque para aquela de que você mais se orgulha-->
-        <h2>Lista de habilidades</h2>
-            <ol>
-                <li class="javascript">Javascript</li>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>Python</li>
-                <li class="metoAgil">Agile mindset</li>
-                <li>Linux, Bash, Shell</li>
-                <li>Git & Github</li>
-            </ol>
-
         <!--Um link interno para a sua foto-->
-        <a href="#foto">Minha foto</a>
-
-        <!--Um link externo para algum blog de que você goste, que abra em uma nova aba-->
-        <a href="https://blog.betrybe.com/carreira/frontend/" target="_blank">Artigo legal</a>
-
+        <!--Um índice com links internos para as diferentes seções do seu portfólio-->
+        <nav class="navigation-menu">
+            <ul class="menu">
+                <li><a href="#sobre">Sobre mim</a></li>
+                <li><a href="#aboutHardSkills">Habilidades</a></li>
+                <li><a href="#projects">Projetos</a></li>
+                <li><a href="#network">Redes</a></li>
+            </ul>
+        </nav>
+        <section class="main">
+            <div class="horizontal-items">
+                <div class="me">
+                    <strong>Lucas Koyama <br> Full Stack Web <br> Developer</strong>
+                </div>
+                <div class="photo">
+                    <!--Uma foto atual sua, acompanhada de um texto alternativo, que deve ser a descrição da foto que você está usando-->
+                    <img src="/images/perfil_smile_serious.JPG" alt="foto do Lucas Koyama com fundo contendo árvores desfocadas" width="400px" id="sobre">
+                </div>
+            </div>
+        </section>
+        <section class="aboutAndSkills">
+            <div class="name">
+                <!--Seu nome completo-->
+                <h3 id="name">LUCAS HIDEKI OLIVEIRA KOYAMA</h3>
+            </div>
+            <div class="description">
+                <!--Uma breve descrição sobre você, destacando algumas informações como nacionalidade e a cidade/estado onde mora-->
+                <!--Partes do seu portfólio destacadas com negrito e/ou itálico-->
+                <p>Sou de <strong>Aguaí - SP</strong>, cidade onde fica a Multiway empresa de infraestrutura para TI (data center), foi trabalhando
+                nela como aprendiz e como programador CNC que me interessei pela area de desenvolvimento, quando fiz as primeiras automações e scripts
+                em vba no excel e no pc em geral usando o autohotkeys, foi quando mergulhei em python, anos se passaram e analisando o mercado, e as linguagens
+                vi um enorme potencial de agregar valor focando em desenvolvimento web! <br>
+                <br>
+                Criar aplicações web que promovam o <strong>branding</strong> da empresa aumentando sua visibilidade e reconhecimento perante o mercado, faze-las
+                ser uma solução para os <strong>problemas dos clientes</strong>, e ainda utilizar de ciência de dados para extrair <strong>informações valiosas</strong>
+                antes não vistas e com isso trazer resultados, são coisas que eu curto de mais desenvolver!</p>
+            </div>
+            <!--Uma lista de habilidades que você possui, com destaque para aquela de que você mais se orgulha-->
+            <div class="aboutMePersonal">SOBRE MIM PESSOAL</div>
+            <div class="grid" id="aboutHardSkills">
+                <div class="html">
+                    <small>HTML</small>
+                    <p>Linguagem para <strong>estruturar</strong> a aplicação, é por ela que geralmente começo fazendo o <strong>esboço inicial</strong>!</p>
+                </div>
+                <div class="css">
+                    <small>CSS</small>
+                    <p>Linguagem usada para <strong>estilizar</strong> suas aplicações, para ficarem com um <strong>design e layout agradável</strong>!</p>
+                </div>
+                <div class="js">
+                    <small>JAVASCRIPT - ES6</small>
+                    <p>Utilizo a linguagem de programação no <strong>back-end</strong> e <strong>front-end</strong> das aplicações web!</p>
+                </div>
+                <div class="python">
+                    <small>PYTHON</small>
+                    <p>Minha porta de entrada para a programação, gosto muito de utiliza-la para criar <strong>automações, scripts e aplicações leves</strong>!</p>
+                </div>
+            </div>
+            <div class="aboutHardSkills">LISTA COMPLETA <br> HARD SKILLS</div>
+            <br>
+        </section>
+        <section>
+            <h3 id="projects">PROJETOS</h3>
+            <div class="grid-projects">
+                <div class="kamari">
+                    <small>Kamari App</small>
+                    <p>Aplicação em desenvolvimento para a confecção de roupas <strong>Kamari</strong>, cliente consegue previamente personalizar sua camiseta com as cores e logos, como
+                        também solicitar a quantidade de camisetas, seus modelos e tamanhos! Foco da aplicação atual, aumentar a agilidade do atendimento com o cliente dando a ele a possibilidade
+                        de obter previamente informações de como ficará e quanto será aproximadamente o valor final!
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="followMe" id="network">
+            <h3>REDES</h3>
+            <div class="network">
+                <a href="https://github.com/lucasKoyama/"><img src="/images/github.png" width="45px"></a>
+                <a href="https://www.linkedin.com/in/lucas-koyama/"><img src="/images/linkedin.png" width="80px"></a>
+            </div>
+        </section>
     </body>
 </html>
