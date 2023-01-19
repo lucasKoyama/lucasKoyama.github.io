@@ -85,6 +85,9 @@ a:hover {
 #name {
     padding-top: 15px;
     font-size: 40px;
+    margin: 15px auto 15px auto;
+    text-align: center;
+    width: 100%;
 }
 
 h3 {
@@ -116,7 +119,8 @@ h3 {
     text-align: center;
     justify-content: center;
     align-items: center;
-    width: 800px;
+    width: 55%;
+    height: 120%;
     margin-bottom: 15px;
     color: #CCCCCC;
 }
@@ -146,7 +150,6 @@ h3 {
 }
 
 .grid {
-    display: grid;
     margin: auto;
     grid-template: repeat(2, 1fr) / repeat(2, 1fr);
     width: 40%;
